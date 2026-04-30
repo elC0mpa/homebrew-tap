@@ -5,21 +5,21 @@
 class AwsDoctor < Formula
   desc "Powerful open-source CLI to audit security, costs, and best practices in AWS. 🩺 ☁️"
   homepage "https://github.com/elC0mpa/aws-doctor"
-  version "2.12.0"
+  version "2.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.12.0/aws-doctor_2.12.0_darwin_amd64.tar.gz"
-      sha256 "dca57e1805c032a79d91219705450d41106fb4bb4287f75e0ee4c3e93379f11d"
+      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.13.0/aws-doctor_2.13.0_darwin_amd64.tar.gz"
+      sha256 "c383d1593c6fbc2638d8dbff1369a6d6183a942b868d6f21c244f8017d2c7c8b"
 
       define_method(:install) do
         bin.install "aws-doctor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.12.0/aws-doctor_2.12.0_darwin_arm64.tar.gz"
-      sha256 "08184dfab25f4583dab11e441a3e3497b69403d78b4b2ddea235ad5055eade59"
+      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.13.0/aws-doctor_2.13.0_darwin_arm64.tar.gz"
+      sha256 "98f10ab8d1c8c02d43ce01d8a8a1991d350adafe2f685b094e121758a559ec9e"
 
       define_method(:install) do
         bin.install "aws-doctor"
@@ -29,15 +29,15 @@ class AwsDoctor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.12.0/aws-doctor_2.12.0_linux_amd64.tar.gz"
-      sha256 "7fd878b6a40ae32325ffaa04f3fa2db73faf795a59df419870524e2ce3811e5a"
+      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.13.0/aws-doctor_2.13.0_linux_amd64.tar.gz"
+      sha256 "4b83ad0aba5eee3e6b205c7304cb7571ef6a97cea5ff6fac2f57a12b04557910"
       define_method(:install) do
         bin.install "aws-doctor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.12.0/aws-doctor_2.12.0_linux_arm64.tar.gz"
-      sha256 "67c04c54eeaa945000306d95cbf6393990b9afb23601aeb749fc39c7553f1394"
+      url "https://github.com/elC0mpa/aws-doctor/releases/download/v2.13.0/aws-doctor_2.13.0_linux_arm64.tar.gz"
+      sha256 "6c1c387d3d0667bafbc14c66826f1217e616a3280478e8872164c67f83a805c0"
       define_method(:install) do
         bin.install "aws-doctor"
       end
